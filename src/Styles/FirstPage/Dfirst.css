@@ -1,0 +1,164 @@
+.Container {
+    margin-top: 55vh;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+
+    grid-template-areas: ". .";
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    float: right;
+    justify-self: end;
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: rotate(-3deg) translateY(-10px);
+}
+
+img:hover:after {
+    transition: opacity 0.5s ease 0.5s;
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+img:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    color: #E6E6E6;
+    font-size: 4vw;
+    border: 3px solid #8B8B8B;
+    border-radius: 15px;
+    padding: 10px
+}
+
+.para {
+    margin-top: 10px;
+    font-size: 1vw;
+    padding: 10px;
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 300;
+
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+}
+
+
+
+.keyword {
+    position: relative;
+}
+
+.keyword::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: -23px;
+    height: 23px;
+    z-index: -1;
+    background-color: #ae3737;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 2s ease-out;
+
+}
+
+.keyword.in-view::before {
+    transform: scaleX(1);
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .para {
+        margin-top: 0px;
+        font-size: 2.5vw;
+        padding: 10px;
+        font-family: 'Londrina Solid';
+        font-style: normal;
+        font-weight: 300;
+
+        line-height: 18px;
+        letter-spacing: 0.03em;
+
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        float: right;
+        justify-self: end;
+    }
+
+    .Container {
+        margin-top: 25vh;
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+}
+
+@media only screen and (max-width: 404px) {
+    img {
+        height: 50%;
+        width: 100%;
+        float: right;
+        justify-self: end;
+    }
+
+    .para {
+        margin-top: 0px;
+        font-size: 2.5vw;
+        padding: 10px;
+        font-family: 'Londrina Solid';
+        font-style: normal;
+        font-weight: 300;
+
+        line-height: 10px;
+        letter-spacing: 0.03em;
+
+    }
+
+}

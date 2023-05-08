@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Solid&display=swap');
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    padding-top: 15vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        position: absolute;
+        width: 100%;
+        padding-top: 60vw;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+}
+
+h1 {
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10vw;
+
+    /* or 465px */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+}

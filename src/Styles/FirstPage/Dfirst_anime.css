@@ -1,0 +1,12 @@
+.greeting-container {
+    padding: 30px;
+}
+
+h2 {
+
+    font-size: clamp(1vw, 2vw, 3vw);
+    text-align: center;
+    font-family: 'Kreon', serif;
+    margin: 0;
+    line-height: 0;
+}
