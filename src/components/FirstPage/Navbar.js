@@ -1,6 +1,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 import "./../../Styles/FirstPage/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const navRef = useRef();
@@ -11,14 +12,14 @@ function Navbar() {
 
     return (
         <header>
-            <h3>Noah Kornberg</h3>
+            <Link to="/" className="headerLink"> Noah Kornberg</Link>
 
 
             <nav ref={navRef}>
-                <a href="/#">Work</a>
-                <a href="/#">Resume</a>
-                <a href="/#">About</a>
-                <a href="/#">Contact</a>
+                <Link to="/#" className="pLink">Work</Link>
+                <Link to="/Resume" className="pLink">Resume</Link>
+                <Link to="/#" className="pLink">About</Link>
+                <Link to="/#" className="pLink">Contact</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes></FaTimes>
                 </button>

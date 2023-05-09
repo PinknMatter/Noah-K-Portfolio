@@ -2,31 +2,31 @@ import React from "react";
 import gsap from "gsap"
 import SplitTextJS from 'split-text-js';
 import "../../Styles/FirstPage/Dfirst_anime.css";
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 
 const Dfirst_anime = () => {
 
-    useEffect(()=>{
-    const titles = gsap.utils.toArray('h2')
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: -0 / 9 });
-    titles.forEach(title => {
-        const splitTitle = new SplitTextJS(title);
+    useEffect(() => {
+        const titles = gsap.utils.toArray('h2')
+        const tl = gsap.timeline({ repeat: -1, repeatDelay: -0 / 9 });
+        titles.forEach(title => {
+            const splitTitle = new SplitTextJS(title);
 
-        tl
-            .from(splitTitle.chars, {
-                opacity: 0,
-                y: 50,
-                rotateX: -90,
+            tl
+                .from(splitTitle.chars, {
+                    opacity: 0,
+                    y: 30,
+                    rotateX: -90,
 
-            }, "<")
+                }, "<")
 
-            .to(splitTitle.chars, {
-                opacity: 0,
-                y: -50,
-                rotateX: 90,
+                .to(splitTitle.chars, {
+                    opacity: 0,
+                    y: -30,
+                    rotateX: 90,
 
-            }, "<2")
+                }, "<2")
 
         })
     });

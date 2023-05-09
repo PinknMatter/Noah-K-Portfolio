@@ -1,0 +1,48 @@
+.Rcontainer {
+    width: auto;
+    height: 120vh;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+}
+
+.pdf {
+    width: 50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pdfI {
+    margin-top: -28%;
+    height: 70%;
+    width: 70%;
+    border: none;
+}
+
+.button_pdf {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 2px solid #6d6d6d;
+    color: white;
+    background: none;
+    font-size: 1.5vw;
+    font-family: "londrina solid";
+    font-weight: 300;
+    transition: 0.5s ease;
+
+
+}
+
+.button_pdf:hover {
+    position: relative;
+    background-color: #6d6d6d;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+
+}

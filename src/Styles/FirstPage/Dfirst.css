@@ -28,6 +28,8 @@ img {
     float: right;
     justify-self: end;
     transition: transform 0.5s ease;
+    border: 3px solid #8B8B8B;
+    border-radius: 15px;
 }
 
 img:hover {
@@ -137,6 +139,10 @@ li {
         margin-right: auto;
 
 
+    }
+
+    .title {
+        font-size: 3vw;
     }
 }
 

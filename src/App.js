@@ -1,13 +1,8 @@
 import React from 'react';
 import "./App.css";
-import Navbar from "./components/FirstPage/Navbar";
-import Landing from './components/FirstPage/landing';
-import Background from './components/FirstPage/background';
-import Dfirst from './components/FirstPage/Dfirst';
-import Dsecond from './components/FirstPage/Dsecond';
-import SmoothScroll from './components/FirstPage/Smoothscroll';
-import Background_color from './components/FirstPage/background_color';
-
+import Home from './components/Routes/home';
+import { Route, Routes } from "react-router-dom";
+import Resume from './components/Routes/Resume';
 
 
 
@@ -19,16 +14,13 @@ class App extends React.Component {
 
     return (
       <div>
-        
-        <Landing></Landing>
-        <Navbar />
-        <Background_color />
 
-        <SmoothScroll>
-          <Background />
-          <Dfirst></Dfirst>
-          <Dsecond></Dsecond>
-        </SmoothScroll>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Resume" element={<Resume />} />
+
+        </Routes>
+
 
       </div>
 

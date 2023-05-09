@@ -10,7 +10,7 @@
     --mainColor: #494949;
     --mainColorLight: #6d6d6d;
     --secondaryColor: #ae3737;
-    --textColor: #FFFFFF;
+    --textColor: #eaeaea;
     --textColorDark: #b0b0b0;
 }
 
@@ -41,7 +41,21 @@ h3 {
     line-height: 47px;
     text-align: center;
     letter-spacing: 0.03em;
+    text-decoration: none;
 
+}
+
+.headerLink {
+    text-decoration: none;
+    font-family: 'Londrina Solid';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -50,16 +64,17 @@ nav a {
     color: var(--textColorDark);
     text-decoration: none;
     font-family: 'Kreon', serif;
+
 }
 
 a {
     position: relative;
     font-size: 1.1vw;
-
+    cursor: pointer;
 
 }
 
-a:after {
+.pLink:after {
     position: sticky;
     content: "";
     position: absolute;
@@ -70,9 +85,23 @@ a:after {
     border: none;
     bottom: -4px;
     transition: 0.5s;
-    pointer-events: none;
 
 
+
+
+}
+
+.headerLink:after {
+    position: sticky;
+    content: "";
+    position: absolute;
+    background-color: #ae3737;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    border: none;
+    bottom: -1px;
+    transition: 0.5s;
 
 }
 
@@ -134,7 +163,7 @@ header .nav-btn {
 
     header .responsive_nav {
 
-        transform: translateY(-100vh);
+        transform: translateY(-200vh);
     }
 
     nav .nav-close-btn {

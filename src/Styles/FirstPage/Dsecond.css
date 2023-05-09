@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Solid&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Solid&display=swap%27');
 
 .youContainer {
 
@@ -13,6 +12,7 @@
     /* Add this to the container to make it a reference for absolute positioning */
 }
 
+
 .youtube {
     position: relative;
     padding-top: 20%;
@@ -22,7 +22,7 @@
 
     align-items: center;
     padding-right: 30%;
-    display: flex;
+
 }
 
 .youTitle {
@@ -40,21 +40,35 @@
 }
 
 .video {
-    width: auto;
-    padding: 2px;
-    height: 100%;
+
     margin-right: 7px;
 
-
-    height: 0;
-
-
+    width: 96%;
+    height: 96%;
     position: absolute;
     /* Add this to the video element to position it relative to the container */
     top: 0;
-    /* Position the element at the top */
+    /*Position the element at the top */
     right: 0;
     /* Position the element at the right */
     justify-content: center;
     align-items: center;
+
+}
+
+.video iframe {
+    border: 3px solid #8B8B8B;
+    border-radius: 15px;
+    width: 80%;
+    height: 80%;
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    .youContainer {
+        padding-top: 20%;
+    }
+
+
+
 }
