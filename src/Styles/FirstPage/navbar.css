@@ -178,5 +178,8 @@ header .nav-btn {
         font-size: 3.5rem;
     }
 
+    .headerLink {
+        width: 100%;
+    }
 
 }

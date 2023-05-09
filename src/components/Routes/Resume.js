@@ -7,10 +7,10 @@ function Resume() {
 
         <div>
             <Navbar />
-            <SmoothScroll>
-                <ResumeInfo />
 
-            </SmoothScroll>
+            <ResumeInfo />
+
+
 
 
 

@@ -10,7 +10,7 @@ function Landing() {
 
     return (
         <div className="main">
-            <video src={videoBg} autoPlay loop />
+            <video src={videoBg} autoPlay loop preload="metadata" />
 
             <div className="content">
                 <h1>Noah Kornberg</h1>

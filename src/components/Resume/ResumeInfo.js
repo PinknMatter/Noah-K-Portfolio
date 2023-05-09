@@ -8,16 +8,22 @@ function ResumeInfo() {
 
 
     return (
-        <div className="Rcontainer">
-            <div className="pdf">
-                <iframe className="pdfI" src={resume}> </iframe>
-                <a href={resume} download="Noah_Kornberg_Resume.pdf">
-                    <button className="button_pdf">Download</button>
-                </a>
+        <div>
+
+            <div className="Rcontainer">
+                <div className="pdf">
+                    <iframe className="pdfI" src={resume}> </iframe>
+                    <a href={resume} download="Noah_Kornberg_Resume.pdf">
+                        <button className="button_pdf">Download</button>
+                    </a>
+
+                </div>
 
             </div>
 
+
         </div>
+
     );
 }
 

@@ -112,7 +112,7 @@ li {
         font-style: normal;
         font-weight: 300;
 
-        line-height: 18px;
+        line-height: 24px;
         letter-spacing: 0.03em;
 
     }
@@ -141,9 +141,23 @@ li {
 
     }
 
-    .title {
-        font-size: 3vw;
+    .keyword::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin-top: -20px;
+        height: 15px;
+        z-index: -1;
+        background-color: #ae3737;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 2s ease-out;
+
     }
+
+
 }
 
 @media only screen and (max-width: 404px) {
@@ -164,6 +178,22 @@ li {
 
         line-height: 10px;
         letter-spacing: 0.03em;
+
+    }
+
+    .keyword::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin-top: -8px;
+        height: 8px;
+        z-index: -1;
+        background-color: #ae3737;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 2s ease-out;
 
     }
 
