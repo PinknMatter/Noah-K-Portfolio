@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Noah-K-portfolio/static/css/main.f6de309e.css",
+    "main.js": "/Noah-K-portfolio/static/js/main.88576538.js",
+    "static/media/videobg.mp4": "/Noah-K-portfolio/static/media/videobg.a4a1ad3a1e1e1a0ac0b1.mp4",
+    "static/media/selfie.jpg": "/Noah-K-portfolio/static/media/selfie.5dc4ba3eec8355be4452.jpg",
+    "index.html": "/Noah-K-portfolio/index.html",
+    "main.f6de309e.css.map": "/Noah-K-portfolio/static/css/main.f6de309e.css.map",
+    "main.88576538.js.map": "/Noah-K-portfolio/static/js/main.88576538.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6de309e.css",
+    "static/js/main.88576538.js"
+  ]
+}
