@@ -11,6 +11,7 @@ function Landing() {
     return (
         <div className="main">
             <video src={videoBg} autoPlay loop />
+
             <div className="content">
                 <h1>Noah Kornberg</h1>
                 <div className="container">
