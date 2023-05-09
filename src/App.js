@@ -19,6 +19,7 @@ class App extends React.Component {
 
     return (
       <div>
+        
         <Landing></Landing>
         <Navbar />
         <Background_color />
