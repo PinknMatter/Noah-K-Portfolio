@@ -1,17 +1,10 @@
-import "../../Styles/FirstPage/Dsecond.css";
-import YouTube from 'react-youtube';
+import Featured_projects from "./Featured_projects";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import SplitText from 'split-text-js';
-import SlideInOnScroll from "./SlideInOnScroll";
+import "../../Styles/FirstPage/Dthird.css"
 
-function Dsecond() {
-    const videoId = 'R3MzK1XR4HU';
-    const opts = {
-        height: '720',
-        width: '1280',
-    }
-
+function Dthird() {
     const titleRef = useRef(null);
     const observer = useRef(
         new IntersectionObserver((entries) => {
@@ -36,17 +29,16 @@ function Dsecond() {
             observer.current.unobserve(titleRef.current);
         };
     }, []);
-
     return (
-        <div className="youContainer">
-            <div className="youTitle" >
-                <p3 className="p3" ref={titleRef}>Showreel 2023</p3>
+        <div className="feaContainer">
+            <div className="feaTitle">
+                <p4 className="p4" ref={titleRef}>Featured Projects</p4>
             </div>
-            <div className="youtube">
-                <YouTube className="video" videoId={videoId} opts={opts} />
+            <div>
+                <Featured_projects></Featured_projects>
             </div>
         </div>
     );
 }
 
-export default Dsecond;
+export default Dthird;

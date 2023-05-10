@@ -5,10 +5,14 @@ import ResumeInfo from "../Resume/ResumeInfo";
 function Resume() {
     return (
 
-        <div>
-            <Navbar />
+        <div id="resume">
+            <SmoothScroll>
+                <Navbar />
 
-            <ResumeInfo />
+                <ResumeInfo />
+
+            </SmoothScroll>
+
 
 
 

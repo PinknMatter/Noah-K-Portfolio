@@ -5,6 +5,8 @@ import Dfirst from '../../components/FirstPage/Dfirst';
 import Dsecond from '../../components/FirstPage/Dsecond';
 import SmoothScroll from '../../components/FirstPage/Smoothscroll';
 import Background_color from '../../components/FirstPage/background_color';
+import Dthird from "../../components/FirstPage/Dthird";
+import SlideInOnScroll from "../../components/FirstPage/SlideInOnScroll";
 
 function Home() {
     return (
@@ -13,9 +15,18 @@ function Home() {
             <Navbar />
             <Background_color />
             <SmoothScroll>
+
                 <Background />
-                <Dfirst></Dfirst>
-                <Dsecond></Dsecond>
+                <SlideInOnScroll direction="left">
+                    <Dfirst></Dfirst>
+                </SlideInOnScroll>
+
+                <SlideInOnScroll direction="right">
+                    <Dsecond></Dsecond>
+                </SlideInOnScroll>
+
+
+                <Dthird></Dthird>
             </SmoothScroll>
         </div>
     );

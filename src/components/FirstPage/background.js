@@ -39,9 +39,11 @@ function Background() {
     return (
         <div className="bgcontainer" >
             <svg className="bgsvg" width="1628" height="4050" viewBox="0 0 1628 4050" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <svg width="1627" height="4050" viewBox="0 0 1627 4050" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M842 0V389H1622V1642H5V2697H1622V3831.5H958V4049.5" stroke="#898989" stroke-width="10" stroke-dasharray="30 30" />
-                </svg>
+                <path d="M842 0V389H1622V1642H5V2697H1622V3831.5H958V4049.5" stroke="#898989" stroke-width="5" stroke-dasharray="30 30" />
+
+
+
+
             </svg>
 
 

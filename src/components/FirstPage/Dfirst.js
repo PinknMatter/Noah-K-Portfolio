@@ -38,7 +38,7 @@ function Dfirst() {
                         bring a unique approach to all of my
                         projects.  I am <span class="keyword">passionate</span> about creative
                         storytelling and skilled in motion design,
-                        VFX, video and photo editing,
+                        VFX, 3D, video and photo editing,
                         web development, and programming.
                         I thrive in challenging environments
                         and enjoy collaborating with others
