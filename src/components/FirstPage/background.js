@@ -7,7 +7,7 @@ function Background() {
 
     useEffect(() => {
 
-        console.log("herin useEffect");
+       //console.log("herin useEffect");
         let paths = document.querySelectorAll('path');
 
 

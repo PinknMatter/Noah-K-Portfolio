@@ -13,7 +13,7 @@
 }
 
 
-.youtube {
+.player-wrapper {
     position: relative;
     padding-top: 20%;
     width: 50%;
@@ -22,7 +22,7 @@
 
     align-items: center;
     padding-right: 30%;
-
+  
 }
 
 .youTitle {
@@ -39,7 +39,7 @@
 
 }
 
-.video {
+.youtube-player {
 
     margin-right: 7px;
 
@@ -56,7 +56,7 @@
 
 }
 
-.video iframe {
+.youtube-player iframe {
     border: 3px solid #8B8B8B;
     border-radius: 15px;
     width: 80%;
