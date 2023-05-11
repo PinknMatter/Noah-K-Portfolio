@@ -31,9 +31,14 @@ function Dsecond() {
     );
 
     useEffect(() => {
-        observer.current.observe(titleRef.current);
+        const { current: observerInstance } = observer;
+        if (titleRef.current) {
+            observerInstance.observe(titleRef.current);
+        }
         return () => {
-            observer.current.unobserve(titleRef.current);
+            if (titleRef.current) {
+                observerInstance.unobserve(titleRef.current);
+            }
         };
     }, []);
 

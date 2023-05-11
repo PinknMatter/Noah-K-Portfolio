@@ -1,7 +1,7 @@
 .feaTitle {
     padding-right: 5%;
     font-size: 3vw;
-    color: white;
+    color: rgb(172, 172, 172);
     padding-top: 1%;
     height: fit-content;
     width: 78%;
@@ -22,7 +22,7 @@
 
 .feaContainer {
 
-    margin-top: 1%;
+    margin-top: 8%;
     display: flex;
 
     align-items: center;

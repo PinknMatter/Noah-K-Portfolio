@@ -7,6 +7,8 @@ import SmoothScroll from '../../components/FirstPage/Smoothscroll';
 import Background_color from '../../components/FirstPage/background_color';
 import Dthird from "../../components/FirstPage/Dthird";
 import SlideInOnScroll from "../../components/FirstPage/SlideInOnScroll";
+import Dfourth from "../FirstPage/Dfourth";
+import Footer from "../FirstPage/Footer";
 
 function Home() {
     return (
@@ -25,9 +27,14 @@ function Home() {
                     <Dsecond></Dsecond>
                 </SlideInOnScroll>
 
-
                 <Dthird></Dthird>
+
+                <SlideInOnScroll direction="left">
+                    <Dfourth></Dfourth>
+
+                </SlideInOnScroll>
             </SmoothScroll>
+            <Footer />
         </div>
     );
 }

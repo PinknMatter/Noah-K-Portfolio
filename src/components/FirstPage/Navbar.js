@@ -18,8 +18,8 @@ function Navbar() {
             <nav ref={navRef}>
                 <Link to="/#" className="pLink">Work</Link>
                 <Link to="/Resume" className="pLink">Resume</Link>
-                <Link to="/#" className="pLink">About</Link>
-                <Link to="/#" className="pLink">Contact</Link>
+                <Link to="/About" className="pLink">About</Link>
+                <Link to="/#contact" className="pLink">Contact</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes></FaTimes>
                 </button>

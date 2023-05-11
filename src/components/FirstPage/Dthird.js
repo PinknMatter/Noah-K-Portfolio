@@ -24,18 +24,24 @@ function Dthird() {
     );
 
     useEffect(() => {
-        observer.current.observe(titleRef.current);
+        const { current: observerInstance } = observer;
+        if (titleRef.current) {
+            observerInstance.observe(titleRef.current);
+        }
         return () => {
-            observer.current.unobserve(titleRef.current);
+            if (titleRef.current) {
+                observerInstance.unobserve(titleRef.current);
+            }
         };
     }, []);
+
     return (
         <div className="feaContainer">
             <div className="feaTitle">
                 <p4 className="p4" ref={titleRef}>Featured Projects</p4>
             </div>
             <div>
-                <Featured_projects></Featured_projects>
+                <Featured_projects />
             </div>
         </div>
     );

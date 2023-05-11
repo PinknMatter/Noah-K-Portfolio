@@ -1,4 +1,4 @@
-import "../../Styles/FirstPage/Featured_projects.css"
+import "../../Styles/FirstPage/Featured_projects.css";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
@@ -43,9 +43,8 @@ function Featured_projects() {
         };
     }, []);
 
-
     const handleMouseMove = (e) => {
-        for (const card of cardsRef.current.getElementsByClassName("card")) {
+        for (const card of Array.from(cardsRef.current.getElementsByClassName("card"))) {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;

@@ -71,6 +71,7 @@ a {
     position: relative;
     font-size: 1.1vw;
     cursor: pointer;
+    text-decoration: none;
 
 }
 
@@ -181,5 +182,6 @@ header .nav-btn {
     .headerLink {
         width: 100%;
     }
+
 
 }

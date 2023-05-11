@@ -4,12 +4,14 @@ import { gsap } from "gsap";
 const SlideInOnScroll = ({ children, direction }) => {
     const ref = useRef(null);
 
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     const target = entry.target;
                     if (entry.isIntersecting) {
+                        // Animate the target element when it intersects
                         gsap.fromTo(
                             target,
                             { opacity: 0, x: direction === "right" ? 100 : -100 },
@@ -21,6 +23,7 @@ const SlideInOnScroll = ({ children, direction }) => {
                             }
                         );
                     } else {
+                        // Animate the target element when it leaves the viewport
                         gsap.to(target, {
                             opacity: 0,
                             x: direction === "right" ? 100 : -100,
@@ -34,15 +37,18 @@ const SlideInOnScroll = ({ children, direction }) => {
         );
 
         if (ref.current) {
+            // Start observing the target element
             observer.observe(ref.current);
         }
 
         return () => {
             if (ref.current) {
+                // Stop observing the target element before it is unmounted
                 observer.unobserve(ref.current);
             }
         };
     }, []);
+
 
     return <div ref={ref}>{children}</div>;
 };
