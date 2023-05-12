@@ -36,7 +36,7 @@ svg path {
 
 .wrapper{
     width:90vw;
-    background:rgb(208, 183, 208);
+    /* background:rgb(208, 183, 208); */
     position:absolute;
     height:450vh;
     z-index: -1;

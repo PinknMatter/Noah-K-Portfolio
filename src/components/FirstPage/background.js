@@ -58,7 +58,7 @@ function Background() {
             createBox(currentX,currentY,offset);
           } //across -> right
 
-          for(let i = 0 ; i< 30; i++){
+          for(let i = 0 ; i<50; i++){
            
             createBox(currentX,currentY,offset);
             currentY+=offset;
@@ -71,7 +71,7 @@ function Background() {
 
 
 
-          for(let i = 0 ; i< 22; i++){
+          for(let i = 0 ; i< 36; i++){
            
             createBox(currentX,currentY,offset);
             currentY+=offset;
@@ -155,7 +155,7 @@ function Background() {
           let i=0;
           while(i<(t*scrollPercentage*100) && i< boxes.length){
            
-            boxes[i].style.backgroundColor = "orange";
+            boxes[i].style.opacity = 1;
             i++;
          }
 
@@ -169,7 +169,8 @@ function Background() {
           let j = boxes.length;
           while(j>(t*scrollPercentage*100) && j>0){
               j--;
-              boxes[j].style.backgroundColor = "purple";
+              //boxes[j].style.backgroundColor = "purple";
+              boxes[j].style.opacity = 0;
            }
           
         
