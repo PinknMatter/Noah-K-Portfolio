@@ -41,7 +41,7 @@ function Background() {
           let parentBounds = parentContainer.getBoundingClientRect();
           let currentY = 0;
           let currentX = parentBounds.width/2 -80;
-          let offset = parentBounds.height/100;
+          let offset = (parentBounds.height/100)/2;
           //console.log(offset)
 
           // BUILD AN ARRAY OF BOXES.... based on width and height...
