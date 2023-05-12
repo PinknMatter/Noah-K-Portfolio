@@ -1,4 +1,4 @@
-.bgcontainer {
+/* .bgcontainer {
     width: 100%;
     height: 450vh;
     position: absolute;
@@ -24,4 +24,21 @@
 svg path {
     transition: stroke-dashoffset 0.5s;
     z-index: -6;
+} */
+
+.box{
+    width:5px;
+    height:5px;
+    background:orange;
+    position:absolute;
 }
+
+
+.wrapper{
+    width:90vw;
+    background:rgb(208, 183, 208);
+    position:absolute;
+    height:450vh;
+    z-index: -1;
+}
+
