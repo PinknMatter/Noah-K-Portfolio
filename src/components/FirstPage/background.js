@@ -39,15 +39,15 @@ function Background() {
           prevScrollTop =0;
           let parentContainer = document.getElementById("parent");
           let parentBounds = parentContainer.getBoundingClientRect();
-          let currentY = 0;
-          let currentX = parentBounds.width/2 -80;
+          let currentY =200;
+          let currentX = parentBounds.width/2 -280;
           let offset = (parentBounds.height/100)/2;
           //console.log(offset)
 
           // BUILD AN ARRAY OF BOXES.... based on width and height...
           // may need to detect a resize and then redraw ... 
 
-          for(let i = 0 ; i< 10; i++){
+          for(let i = 0 ; i< 12; i++){
            
             createBox(currentX,currentY,offset);
             currentY+=offset;
@@ -58,7 +58,7 @@ function Background() {
             createBox(currentX,currentY,offset);
           } //across -> right
 
-          for(let i = 0 ; i< 25; i++){
+          for(let i = 0 ; i< 30; i++){
            
             createBox(currentX,currentY,offset);
             currentY+=offset;
