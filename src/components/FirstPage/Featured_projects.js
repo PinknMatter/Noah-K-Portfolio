@@ -1,6 +1,7 @@
 import "../../Styles/FirstPage/Featured_projects.css";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { Link } from 'react-router-dom';
 
 function Featured_projects() {
     const cardsRef = useRef(null);
@@ -63,21 +64,25 @@ function Featured_projects() {
 
     return (
         <div id="cards" ref={cardsRef}>
-            <div className="card">
-                <div className="card-border"></div>
-                <div className="card-content">
-                    <h3>CSSC Redesign</h3>
-                    <p3>Case Study • UX • UI • IXD </p3>
+            <Link to="/case-study">
+                <div className="card">
+                    <div className="card-border"></div>
+                    <div className="card-content">
+                        <h3>CSSC Redesign</h3>
+                        <p3>Case Study • UX • UI • IXD </p3>
+                    </div>
                 </div>
-            </div>
+            </Link>
 
-            <div className="card">
-                <div className="card-border"></div>
-                <div className="card-content">
-                    <h3>22:06:43</h3>
-                    <p3>Project • Video Editing • AI</p3>
+            <Link to="/22-06-43">
+                <div className="card">
+                    <div className="card-border"></div>
+                    <div className="card-content">
+                        <h3>22:06:43</h3>
+                        <p3>Project • Video Editing • AI</p3>
+                    </div>
                 </div>
-            </div>
+            </Link>
 
             <div className="card">
                 <div className="card-border"></div>

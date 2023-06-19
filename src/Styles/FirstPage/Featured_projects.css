@@ -8,9 +8,9 @@
     width: 70vw;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
-
     cursor: pointer;
     position: relative;
+
 }
 
 #cards {
@@ -18,13 +18,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding-top: 4%;
+    padding-top: 1%;
 
 }
 
 .card::before,
 .card>.card-border {
-
     position: absolute;
     border-radius: inherit;
     content: "";
@@ -32,14 +31,14 @@
     left: 0;
     top: 0;
     opacity: 0;
-    transition: opacity 500ms;
+    transition: 500ms;
     width: 100%;
     z-index: 2;
 }
 
-.card::before {
+.card {
     background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
-            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.3),
             transparent 40%);
     z-index: 3;
 
@@ -51,6 +50,13 @@
             transparent 40%);
     z-index: 1;
 
+}
+
+.card::after {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.4),
+            transparent 40%);
+    z-index: 1;
 }
 
 #cards:hover>.card>.card-border {
@@ -66,13 +72,15 @@
     height: calc(100% - 2px);
     width: calc(100% - 2px);
     margin: 1px;
-    border-radius: 50px;
+
+    border-radius: inherit;
     z-index: 2;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
 }
 
 h3 {

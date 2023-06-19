@@ -9,7 +9,7 @@ function Landing() {
 
 
     return (
-        <div className="main">
+        <div className="main" id="landing">
             <video src={videoBg} autoPlay loop preload="preload" />
 
             <div className="content">

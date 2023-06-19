@@ -3,7 +3,7 @@ import '../../Styles/FirstPage/Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <div className="footer-content">
                 <div>
                     <h4>Socials</h4>
@@ -18,6 +18,7 @@ const Footer = () => {
                 <div>
                     <h4>Links</h4>
                     <ul>
+                        <li>Home</li>
                         <li>Work</li>
                         <li>Resume</li>
                         <li>About</li>

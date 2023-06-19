@@ -10,6 +10,7 @@ import SlideInOnScroll from "../../components/FirstPage/SlideInOnScroll";
 import Dfourth from "../FirstPage/Dfourth";
 import Footer from "../FirstPage/Footer";
 
+
 function Home() {
     return (
         <div>
@@ -24,7 +25,10 @@ function Home() {
                 </SlideInOnScroll>
 
                 <SlideInOnScroll direction="right">
+
                     <Dsecond></Dsecond>
+
+
                 </SlideInOnScroll>
 
                 <Dthird></Dthird>
@@ -33,8 +37,9 @@ function Home() {
                     <Dfourth></Dfourth>
 
                 </SlideInOnScroll>
+                <Footer />
             </SmoothScroll>
-            <Footer />
+
         </div>
     );
 }

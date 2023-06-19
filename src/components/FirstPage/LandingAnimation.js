@@ -1,32 +1,32 @@
 import { gsap } from "gsap";
 import SplitTextJS from 'split-text-js';
 import "../../Styles/FirstPage/LandingAnimation.css";
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 function LandingAnimation() {
 
-    useEffect( () =>{
-    const titles = gsap.utils.toArray('p')
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: -0 / 7 });
-    titles.forEach(title => {
-        const splitTitle = new SplitTextJS(title);
+    useEffect(() => {
+        const titles = gsap.utils.toArray('p')
+        const tl = gsap.timeline({ repeat: -1, repeatDelay: -0 / 8 });
+        titles.forEach(title => {
+            const splitTitle = new SplitTextJS(title);
 
-        tl
-            .from(splitTitle.chars, {
-                opacity: 0,
-                y: 50,
-                rotateX: -90,
-                stagger: 0.05
-            }, "<")
+            tl
+                .from(splitTitle.chars, {
+                    opacity: 0,
+                    y: 50,
+                    rotateX: -90,
+                    stagger: 0.05
+                }, "<")
 
-            .to(splitTitle.chars, {
-                opacity: 0,
-                y: -50,
-                rotateX: 90,
-                stagger: 0.05
-            }, "<2")
+                .to(splitTitle.chars, {
+                    opacity: 0,
+                    y: -50,
+                    rotateX: 90,
+                    stagger: 0.05
+                }, "<2")
 
-        },[])
+        }, [])
     });
 
     return (
@@ -38,6 +38,7 @@ function LandingAnimation() {
                 <p>FRONT END DEV</p>
                 <p>IXD DESIGNER</p>
                 <p>VIDEO EDITOR</p>
+                <p>PIPELINE TD</p>
 
             </div>
         </div>

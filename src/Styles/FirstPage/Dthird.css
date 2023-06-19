@@ -1,33 +1,31 @@
 .feaTitle {
-    padding-right: 5%;
     font-size: 3vw;
     color: rgb(172, 172, 172);
-    padding-top: 1%;
+
     height: fit-content;
-    width: 78%;
+    width: 50%;
     font-family: 'Londrina Solid';
     font-style: normal;
     font-weight: 300;
     overflow-y: hidden;
+    text-align: center;
+
 
 
 
 
 }
 
-.p4 {
-    padding-left: 9%;
-}
 
 
 .feaContainer {
 
-    margin-top: 8%;
+    margin-top: 10%;
     display: flex;
 
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     /* Add this to the container to make it a reference for absolute positioning */
 }

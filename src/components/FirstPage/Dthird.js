@@ -13,7 +13,7 @@ function Dthird() {
                 const splitbefore = titleRef.current;
                 const split = new SplitText(splitbefore);
                 gsap.from(split.chars, {
-                    duration: 1,
+                    duration: 0.5,
                     opacity: 0,
                     y: 50,
                     stagger: 0.1,
@@ -38,7 +38,7 @@ function Dthird() {
     return (
         <div className="feaContainer">
             <div className="feaTitle">
-                <p4 className="p4" ref={titleRef}>Featured Projects</p4>
+                <p4 className="p3" ref={titleRef}>Featured Projects</p4>
             </div>
             <div>
                 <Featured_projects />

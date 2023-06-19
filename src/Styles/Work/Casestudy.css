@@ -1,0 +1,82 @@
+/* CaseStudy.css */
+
+.case-study-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case-study-title {
+    font-size: clamp(2rem, 3rem, 4rem);
+    text-align: center;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+.case-study-section {
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case-study-section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.case-study-section:nth-child(even) .case-study-section-content {
+    flex-direction: row-reverse;
+}
+
+.case-study-heading {
+    font-size: clamp(1rem, 2rem, 3rem);
+    margin-bottom: 20px;
+    color: #b2b2b2;
+    width: 100%;
+    text-align: center;
+}
+
+.case-study-paragraph {
+    font-size: clamp(0.5rem, 1.2rem, 1.5rem);
+    text-align: justify;
+    width: 50%;
+
+}
+
+.case-study-section:nth-child(7){
+    margin-bottom: 15%;
+}
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#image-container:nth-child(odd){
+    margin-top: 4%;
+}
+
+#image-container img {
+    border-radius: 10px;
+    width: 30vw;
+    /* Set to desired size */
+    height: 40vh;
+    /* Set to desired size */
+    object-fit: cover;
+    /* To maintain aspect ratio */
+    margin: 0 10px;
+    border-radius: 2;
+    /* Optional: to add some space between images */
+}

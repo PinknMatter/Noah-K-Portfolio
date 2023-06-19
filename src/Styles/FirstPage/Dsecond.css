@@ -1,67 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Solid&display=swap%27');
 
-.youContainer {
 
-    margin-top: 25%;
+.youContainer {
+    margin-top: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     position: relative;
-    /* Add this to the container to make it a reference for absolute positioning */
 }
-
 
 .player-wrapper {
     position: relative;
-    padding-top: 20%;
-    width: 50%;
-    height: 100%;
 
-
+    width: 50.55%;
+    height: 50%;
+    display: flex;
+    /* Add this */
+    justify-content: center;
+    /* Add this */
     align-items: center;
-    padding-right: 30%;
-  
+    /* Add this */
+}
+
+.p3 {
+    font-size: clamp(2rem, 6vw, 3rem);
 }
 
 .youTitle {
-    margin-bottom: 45px;
-    font-size: 3vw;
-    color: white;
-    padding-right: 15px;
 
-    width: 78%;
-    text-align: end;
+    font-size: 3vw;
+    color: rgb(172, 172, 172);
+    width: 100%;
+    /* Updated from 78% */
+    text-align: center;
     font-family: 'Londrina Solid';
     font-style: normal;
     font-weight: 300;
-
 }
 
 .youtube-player {
-
-    margin-right: 7px;
-
-    width: 96%;
-    height: 96%;
-    position: absolute;
-    /* Add this to the video element to position it relative to the container */
-    top: 0;
-    /*Position the element at the top */
-    right: 0;
-    /* Position the element at the right */
-    justify-content: center;
-    align-items: center;
-
+    position: relative;
+    /* Updated from absolute */
+    width: 100%;
+    /* Add this */
+    height: 100%;
+    /* Add this */
 }
 
 .youtube-player iframe {
     border: 3px solid #8B8B8B;
     border-radius: 15px;
-    width: 80%;
-    height: 80%;
-    float: right;
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -69,6 +60,7 @@
         padding-top: 20%;
     }
 
-
-
+    .player-wrapper {
+        width: 80%;
+    }
 }

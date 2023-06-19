@@ -29,7 +29,7 @@ function Dfirst() {
     return (
         <div className="Container">
             <div className="Grid">
-                <div><img src={image} /></div>
+                <div><img src={image} className="portrait" /></div>
                 <div>
                     <div className="title"><Dfirst_anime /></div>
                     <li className="para">I am a <span class="keyword">highly motivated</span> student

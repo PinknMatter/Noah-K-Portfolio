@@ -16,7 +16,7 @@ function Navbar() {
 
 
             <nav ref={navRef}>
-                <Link to="/#" className="pLink">Work</Link>
+                <Link to="/Work" className="pLink">Work</Link>
                 <Link to="/Resume" className="pLink">Resume</Link>
                 <Link to="/About" className="pLink">About</Link>
                 <Link to="/#contact" className="pLink">Contact</Link>

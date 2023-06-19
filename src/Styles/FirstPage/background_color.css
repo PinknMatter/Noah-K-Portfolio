@@ -1,13 +1,21 @@
 :root {
     --backgroundColor: #131313;
-
 }
 
 .background_color {
-    width: 100%;
-    height: 500vh;
-    position: absolute;
-    background-color: #131313;
+    position: fixed;
+    /* changed from relative to fixed */
+    top: 0;
+    /* positions the background at the top */
+    left: 0;
+    /* positions the background at the left */
+    width: 100vw;
+    /* makes it as wide as the viewport */
+    height: 100vh;
+    /* makes it as tall as the viewport */
+    background-color: var(--backgroundColor);
     z-index: -1;
-    overflow-y: hidden;
+    /* keeps it behind other content */
+
+
 }

@@ -43,7 +43,7 @@ const Dfirst_anime = () => {
                 Salut, je suis Noah
             </h2>
             <h2 className="greeting-text">
-                Hallo, ich bin Noah
+                Merhaba, benim adim Noah
             </h2>
             <h2 className="greeting-text">
                 こんにちは、私はノアです
