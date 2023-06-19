@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Noah-K-Portfolio/static/css/main.f54181ef.css",
-    "main.js": "/Noah-K-Portfolio/static/js/main.f3fd89a8.js",
-    "static/media/videobg.mp4": "/Noah-K-Portfolio/static/media/videobg.a4a1ad3a1e1e1a0ac0b1.mp4",
-    "static/media/Frame26.png": "/Noah-K-Portfolio/static/media/Frame26.1dd9d4fa2c0289ed339d.png",
-    "static/media/frame262.png": "/Noah-K-Portfolio/static/media/frame262.658c82d371f79292680c.png",
-    "static/media/trips.png": "/Noah-K-Portfolio/static/media/trips.9802fcc3bacece35d643.png",
-    "static/media/trips2.png": "/Noah-K-Portfolio/static/media/trips2.e2fa4e25bb15bee7464f.png",
-    "static/media/selfie.jpg": "/Noah-K-Portfolio/static/media/selfie.5dc4ba3eec8355be4452.jpg",
-    "static/media/empathy.png": "/Noah-K-Portfolio/static/media/empathy.410fa739f7c1b2e42240.png",
-    "static/media/Calendar.png": "/Noah-K-Portfolio/static/media/Calendar.adb2395de8a657a93e1b.png",
-    "static/media/Noah_Kornberg_Resume.pdf": "/Noah-K-Portfolio/static/media/Noah_Kornberg_Resume.a0b5e5f192097a6a6a14.pdf",
-    "static/media/flow.png": "/Noah-K-Portfolio/static/media/flow.136dba583ef523755f18.png",
-    "index.html": "/Noah-K-Portfolio/index.html",
-    "main.f54181ef.css.map": "/Noah-K-Portfolio/static/css/main.f54181ef.css.map",
-    "main.f3fd89a8.js.map": "/Noah-K-Portfolio/static/js/main.f3fd89a8.js.map"
+    "main.css": "./static/css/main.f54181ef.css",
+    "main.js": "./static/js/main.2d32c637.js",
+    "static/media/videobg.mp4": "./static/media/videobg.a4a1ad3a1e1e1a0ac0b1.mp4",
+    "static/media/Frame26.png": "./static/media/Frame26.1dd9d4fa2c0289ed339d.png",
+    "static/media/frame262.png": "./static/media/frame262.658c82d371f79292680c.png",
+    "static/media/trips.png": "./static/media/trips.9802fcc3bacece35d643.png",
+    "static/media/trips2.png": "./static/media/trips2.e2fa4e25bb15bee7464f.png",
+    "static/media/selfie.jpg": "./static/media/selfie.5dc4ba3eec8355be4452.jpg",
+    "static/media/empathy.png": "./static/media/empathy.410fa739f7c1b2e42240.png",
+    "static/media/Calendar.png": "./static/media/Calendar.adb2395de8a657a93e1b.png",
+    "static/media/Noah_Kornberg_Resume.pdf": "./static/media/Noah_Kornberg_Resume.a0b5e5f192097a6a6a14.pdf",
+    "static/media/flow.png": "./static/media/flow.136dba583ef523755f18.png",
+    "index.html": "./index.html",
+    "main.f54181ef.css.map": "./static/css/main.f54181ef.css.map",
+    "main.2d32c637.js.map": "./static/js/main.2d32c637.js.map"
   },
   "entrypoints": [
     "static/css/main.f54181ef.css",
-    "static/js/main.f3fd89a8.js"
+    "static/js/main.2d32c637.js"
   ]
 }
